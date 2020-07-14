@@ -1,0 +1,235 @@
+/* ---importing variables for css----- */
+@import url(partials/_variables.css);
+/* ---importing variables for css----- */
+@import url(partials/_global.css);
+
+
+/* HEADER SECTION */
+.header_logo {
+    margin: 30px 0 30px 20px; /* TRBL */
+}
+.nav ul {
+    float: right;
+    margin: 40px 20px 40px 0;
+}
+.nav ul li {
+    display: inline;
+}
+.nav .nav_link {
+    color: #000;
+    padding: 20px;
+}
+.nav .nav_link--active {
+    color: var(--primary-color);
+}
+
+
+/* HOME SECTION */
+.home {
+    background-image: url(../img/banner/home-banner.png);
+    background-size: cover;
+    background-clip: border-box;
+}
+.home_img {
+    margin: 4rem 0;
+}
+.home_content {
+    margin: 7rem 0 7rem 3rem;
+}
+.home_content_text h1:nth-child(1),
+.home_content_text h1:nth-child(3) {
+    font-size: 25px;
+}
+.home_content_text h1 {
+    margin: 0.5rem;
+}
+
+
+/* ABOUT SECTION */
+.about_content {
+    margin: 2rem 0rem;
+}
+.about_content_text h2,
+.about_content_text p {
+    margin: 0.5rem;
+}
+.about_content_text h2 {
+    font: normal bold 40px/40px var(--roboto);
+}
+
+/* ABOUT SECTION */
+.experience {
+    grid-gap: 50px;
+}
+.experience_brand_area {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, auto);
+}
+.experience_brands {
+    border: 1px solid var(--border-color);
+    padding: 1.8rem 0rem;
+    height: 100px;
+    cursor: pointer;
+}
+.experience_brands:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+    transition: transform .4s ease;
+}
+.experience_brands:hover img { /* when you hover on the div the img brightness should increase */
+    filter: brightness(0.15);
+}
+.experience_area {
+    background: rgba(232, 62, 140, 0.06);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.experience_area_yrs {
+    margin-bottom: 24px;
+}
+.experience_area_yrs p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.experience_area_yrs span {
+    font-size: 74px;
+    color: var(--primary-color);
+    margin: 7px;
+}
+.call_zone,
+.call_icon {
+    float: left;
+}
+.call_icon ion-icon {
+    font-size: 50px;
+    margin: 10px;
+}
+.call_zone p {
+    margin: 10px;
+    font: 20px;
+}
+
+/* SERVICES SECTION */
+.services_area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+    /margin: 0 8%;
+}
+.services_list {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 4rem 1rem;
+}
+.services_list_img img {
+    width: 60px;
+    height: 60px;
+}
+.services_list h3 {
+    padding: 1rem;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio_slide-show {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: #f4f4f4;
+}
+.portfolio_imgs img {
+    width: 80%;
+    margin: 0 10%;
+    height: 400px;
+}
+.portfolio_icons {
+    margin: 12rem 1rem 0 1rem;
+    font-size: 30px;
+}
+.portfolio_icons ion-icon {
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial_area {
+    grid-gap: 40px;
+}
+.client_area_img {
+    margin: 25px 2.5px 25px 25px; /* TrBL */
+}
+.client_area_details {
+    margin: 25px 25px 25px 2.5px; /* TRBl */
+}
+.client_area_img img {
+    width: 120px;
+    height: 120px;
+}
+.client_area_details h3 {
+    margin-bottom: 10px;
+}
+.testimonial_icons {
+    cursor: pointer;
+    font-size: 18px;
+    grid-column: 1 / span 2;
+}
+
+/* CONTACT SECTION */
+.contact_content_text h2,
+.contact_content_text p {
+    color: #fff;
+}
+.contact {
+    background-image: url(../img/subscribe-bg.png);
+    background-size: cover;
+}
+.contact_content {
+    padding: 7rem;
+}
+.contact_content_input input {
+    padding: 15px;
+    width: 350px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    margin: 5px;
+}
+.contact_content_input input::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+.contact_content_input button {
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact_content_input button:hover {
+    transform: scale(0.9); /* reduce the scale by 0.1 */
+}
+
+/* FOOTER */
+footer {
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-clip: border-box;
+}
+.footer_content {
+    padding: 7rem 7rem 3rem 7rem;
+    display: grid;
+    grid-gap: 20px;
+}
+.footer_social h2 {
+    margin-bottom: 20px;
+}
+.footer_social ion-icon {
+    font-size: 25px;
+    margin: 0 30px;
+    color: var(--text-color);
+}
+.footer_social ion-icon:hover,
+.footer_copyright a {
+    color: var(--primary-color);
+}

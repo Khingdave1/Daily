@@ -1,0 +1,204 @@
+/* Big tablet to 1200px: from 931 t0 1200 */
+@media only screen and (max-width: 1200px) {
+   body {
+        font-size: 90%;
+    }
+}
+
+
+/* Small tablet to big tablet: from 768px to 930px */
+@media only screen and (max-width: 930px) {
+    .nav ul {
+        display: none;
+    }
+    .home_img img ,
+    .about_img img {
+        width: 300px;
+    }
+    .home_content_text h1:nth-child(1),
+    .home_content_text h1:nth-child(3) {
+        font-size: 20px;
+    }
+    .home_content_text h1:nth-child(2) {
+        font-size: 23px;
+    }
+    .btn {
+        padding: .6rem 1.8rem;
+        margin: 7px;
+        font-size: 15px;
+    }
+    .about_content_text h2 {
+        font: normal bold 30px/40px var(--roboto);
+    }
+    .experience {
+        grid-gap: 30px;
+    }
+    .experience_area_yrs {
+        margin-bottom: 44px;
+    }
+    .experience_area_yrs p {
+        font-size: 15px;
+    }
+    .experience_area_yrs span {
+        font-size: 54px;
+        margin: 7px;
+    }
+    .call_icon ion-icon {
+        font-size: 50px;
+        margin: 8px 0;
+    }
+    .client_area_img {
+        margin: 25px 2.5px 25px 25px; /* TrBL */
+    }
+    .client_area_details {
+        margin: 25px 25px 25px 2.5px; /* TRBl */
+    }
+    .client_area_details p {
+        font-size: 14px;
+    }
+    .contact_content {
+        padding: 4rem;
+    }
+    .contact_content_input input {
+        padding: 12px;
+        width: 320px;
+    }
+    .contact_content_input button {
+        padding: 12px 18px;
+    }
+}
+
+/* Small phones to small tablets: from 651px to 767px */
+@media only screen and (max-width: 767px) {
+    .sect_heading h2 {
+        font-size: 22px;
+    }
+   .col-2 {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .home_img,
+    .about_img {
+        margin: 0 5rem;
+    }
+    .home_content {
+        margin: 3rem 3rem;
+    }
+    .home_content_text h1:nth-child(1),
+    .home_content_text h1:nth-child(3) {
+        font-size: 25px;
+    }
+    .home_content_text h1 {
+        margin: 0.5rem;
+    }
+    .experience_area_yrs p {
+        font-size: 22px;
+    }
+    .call_zone p {
+        font-size: 18px;
+    }
+    .portfolio_imgs img {
+        width: 100%;
+        margin: 0;
+        height: 200px;
+    }
+    .portfolio_icons {
+        margin: 6rem 1rem 0 1rem;
+        font-size: 20px;
+    }
+    .client_area_img {
+        margin: 25px 25px 2.5px 25px; /* TrBL */
+    }
+    .client_area_details {
+        margin: 2.5px 25px 25px 25px; /* TRBl */
+    }
+    .client_area_img img {
+        width: 100%;
+        height: 180px;
+    }
+    .client_area_details p {
+        font-size: 14px;
+    }
+
+}
+
+/* Small phones: from 480px to 650px */
+@media only screen and (max-width: 650px) {
+    .btn {
+        padding: .4rem;
+        margin: 7px;
+        font-size: 15px;
+    }
+     .home_img,
+    .about_img {
+        margin: 0 1rem;
+    }
+    .home_content_text h1:nth-child(1),
+    .home_content_text h1:nth-child(3) {
+        font-size: 17px;
+    }
+    .home_content_text h1:nth-child(2) {
+        font-size: 20px;
+    }
+    .experience_brand_area {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, auto);
+    }
+    .services_list {
+        background: rgba(248, 252, 253, 0.973);
+        padding: 2rem 1rem;
+    }
+    .services_list_img img {
+        width: 40px;
+        height: 40px;
+    }
+    .services_list h3 {
+        padding: 1rem 0rem;
+        font-size: 12px;
+    }
+    .contact_content {
+        padding: 2rem;
+    }
+    .footer_content {
+        padding: 3rem;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .testimonial_area {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .testimonial_area {
+        margin: 0 20%;
+    }
+    .sect_heading h2 {
+        font-size: 20px;
+    }
+    .sect_heading p {
+        font-size: 12px;
+    }
+    .client_area {
+        margin-bottom: 20px;
+    }
+    .contact_content {
+        padding: 1rem;
+    }
+    .contact_content_input input {
+        padding: 12px;
+        width: 220px;
+    }
+    .contact_content_input input::placeholder,
+    .contact_content_input button {
+        font-size: 15px;
+    }
+    .contact_content_input button {
+        padding: 13px 18px;
+    }
+    .footer_social ion-icon {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+}
